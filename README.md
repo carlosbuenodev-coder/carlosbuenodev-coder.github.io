@@ -1,38 +1,99 @@
-# Carlos Bueno — Cyber Metal Portfolio
 
-Site de portfólio em React, TypeScript e Vite, com identidade Cyber Metal.
+# Carlos Bueno — Cyber Metal Portfolio 🤘
+
+Portfólio profissional desenvolvido com **React, TypeScript e Vite**, combinando tecnologia, identidade visual Cyber Metal e apresentação de projetos de desenvolvimento de software.
+
+### 🌐 Portfólio publicado
+
+**[Acessar o Cyber Metal Portfolio 2.1](https://carlosbuenodev-coder.github.io/)**
+
+## Sobre o projeto
+
+O Cyber Metal Portfolio apresenta minha trajetória profissional, tecnologias, formação e projetos.
+
+A identidade visual combina preto, grafite e vermelho neon, com referências ao rock clássico e heavy metal.
+
+### Funcionalidades
+
+- Layout responsivo para computadores e celulares.
+- Animações suaves e efeitos interativos.
+- Navegação entre seções.
+- Cartões de tecnologias e projetos.
+- Links para GitHub e LinkedIn.
+- Suporte a navegação por teclado e movimento reduzido.
+- Publicação automatizada pelo GitHub Actions.
+
+## Tecnologias
+
+- React
+- TypeScript
+- Vite
+- CSS
+- Git e GitHub
+- GitHub Actions
+- GitHub Pages
 
 ## Desenvolvimento local
 
-Requer Node.js 22 (ou versão LTS compatível).
+Requer Node.js 22 ou versão LTS compatível.
+
+Clone o repositório:
 
 ```bash
-npm install
+git clone https://github.com/carlosbuenodev-coder/carlosbuenodev-coder.github.io.git
+cd carlosbuenodev-coder.github.io
+```
+
+Instale as dependências:
+
+```bash
+npm ci
+```
+
+Inicie o servidor:
+
+```bash
 npm run dev
 ```
 
-Acesse o endereço local exibido pelo Vite.
+Abra o endereço local informado pelo Vite.
+
+Para gerar o build de produção:
+
+```bash
+npm run build
+```
 
 ## Publicação
 
-1. Crie um **novo** repositório público `carlosbuenodev-coder.github.io` na conta `carlosbuenodev-coder` (não substitua o repositório de perfil `carlosbuenodev-coder`).
-2. Envie o conteúdo desta pasta para a raiz do novo repositório, incluindo `.github/workflows/deploy.yml`.
-3. Envie os arquivos de código. Não envie `node_modules`. O workflow instalará as dependências.
-4. No repositório, abra **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-5. Faça push na branch `main` e acompanhe **Actions**. Depois do deploy, o endereço esperado será `https://carlosbuenodev-coder.github.io`.
+O portfólio está hospedado gratuitamente no GitHub Pages:
 
-Observação: a hospedagem só fica ativa após a configuração e execução bem-sucedida do deploy. O site é estático; não publica nem conecta a API financeira.
+https://carlosbuenodev-coder.github.io/
 
-## Auditoria de dependências
+O repositório utiliza o workflow:
 
-A auditoria de 17/11/2026 reportou quatro entradas de severidade alta na
-cadeia de ferramentas de build. A origem é o aviso
-[GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf)
-em `picomatch@4.0.7`. As demais entradas são `fdir`, `tinyglobby` e
-`vite`, que dependem dessa cadeia. O aviso oficial ainda não lista uma
-versão corrigida. Valide a resolução com `npm audit` quando surgir uma
-correção compatível.
+`.github/workflows/deploy.yml`
 
-O npm 11 também avisou que o `postinstall` do `esbuild@0.25.12` ainda
-não constava na lista `allowScripts`. O log registrou saída 0 para o
-script e o binário instalado reportou a versão esperada.
+O GitHub Actions executa a instalação das dependências, gera o build e publica os arquivos de produção.
+
+O deploy é acionado por pushes na branch `main` ou manualmente pelo GitHub Actions.
+
+## Segurança e dependências
+
+Na auditoria de 17/11/2026, o `npm audit` identificou quatro entradas de severidade alta relacionadas à cadeia de dependências de build, com origem no aviso `GHSA-fc5q-39xc-vjpf` associado ao `picomatch@4.0.7`.
+
+A resolução permanece pendente de verificação de uma atualização compatível.
+
+Também foi registrado um aviso referente ao `postinstall` do `esbuild@0.25.12`. O script terminou com sucesso e o build foi validado.
+
+Esses registros não representam uma correção das vulnerabilidades.
+
+## Observação
+
+Este portfólio é um site estático de apresentação profissional. Ele não publica nem conecta diretamente a API do Sistema de Gestão Financeira Empresarial.
+
+## Contato
+
+- [GitHub](https://github.com/carlosbuenodev-coder)
+- [LinkedIn](https://www.linkedin.com/in/carlosbueno-dev)
+- [Portfólio](https://carlosbuenodev-coder.github.io/)
